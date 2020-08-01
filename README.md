@@ -33,15 +33,11 @@ Twork-前台客户系统
 
     npm run test
 
-## 项目其它访问地址
+## 项目访问地址
 
-    gitlab仓库：xxxxxxx
-    接口文档：xxxxxxx
+    测试线: http://tw-test.ecgtool.com/
+    账号：黄波  密码: ec@123456  编码：ec
 
-## 接口环境
-
-    测试线地址:http://ecsapi-test.ecgtool.com
-    账号: 黄波  密码: ec@123456  编码: ec
 
 ## 项目简介
 
