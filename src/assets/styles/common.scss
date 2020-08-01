@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+// $themeColor: #72b2ff;
+$themeColor: #526ecc;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  // margin: 0;
+  // padding: 0;
+  // border: 0;
+  // font-size: 100%;
+  // font: inherit;
+  // vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  width: 100%;
+  // height: 100%;
+  // user-select: none;
+  // overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: "微软雅黑", "Microsoft Yahei", "PingFang SC", "Open Sans",
+    "Sans-serif";
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.blue {
+  color: #409eff;
+}
+.red {
+  color: red;
+}
+.gray {
+  color: gray;
+}
+.color9 {
+  color: #999;
+}
+.orange {
+  color: orange;
+}
+.green {
+  color: rgb(91, 124, 40);
+}
+.theme-color {
+  color:#526ecc;
+}
+.bgc-orange {
+  background-color: orange;
+}
+.text-center {
+  text-align: center;
+}
+.htitle {
+  padding-left: 10px;
+  border-left: 4px solid $themeColor;
+  margin-bottom: 20px;
+}
+.pointer {
+  cursor: pointer;
+}
+
+// 文字超出省略
+.text-hidden {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.scrollbar {
+  overflow-y: auto;
+}
+.scrollbar::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 8px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 8px;
+}
+// .scrollbar:hover::-webkit-scrollbar {
+//   /*滚动条整体样式*/
+//   width: 8px; /*高宽分别对应横竖滚动条的尺寸*/
+//   height: 8px;
+// }
+.scrollbar::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #d4dce6;
+}
+.scrollbar::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #ededed;
+}

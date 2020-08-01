@@ -1,0 +1,46 @@
+@import "./mixin.scss";
+@import "./common.scss";
+
+#nprogress .bar {
+  background: #409eff !important; //自定义颜色
+}
+
+.el-table__body-wrapper::-webkit-scrollbar {
+  width: 10px;
+  height: 13px;
+}
+
+.el-table__body-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  /* -webkit-box-shadow: inset 0 0 5px #f1f1f1; */
+  /* background: rgba(0, 121, 71, 0.5); */
+  background: #d9d9d9;
+}
+
+.el-table__body-wrapper::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 5px #fff; */
+  border-radius: 0;
+  /* background: rgba(0, 121, 71, 0.1); */
+  background: none;
+}
+
+.el-select {
+  display: block !important;
+}
+
+.el-cascader {
+  display: block !important;
+}
+
+.dialog-footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.el-dialog__body {
+  padding-top: 0 !important;
+}

@@ -1,0 +1,125 @@
+$animationTime: 0.2s;
+$animationType: linear;
+$bg: #007947;
+$placeholder: #999;
+
+@mixin scrollBar() {
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 13px;
+    visibility: hidden;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    /* -webkit-box-shadow: inset 0 0 5px #f1f1f1; */
+    /* background: rgba(0, 121, 71, 0.5); */
+    background: #d9d9d9;
+  }
+  &::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 5px #fff; */
+    border-radius: 0;
+    /* background: rgba(0, 121, 71, 0.1); */
+    background: none;
+  }
+}
+
+@mixin transitons($times) {
+  transition: all $times linear;
+  -moz-transition: all $times linear; /* Firefox 4 */
+  -webkit-transition: all $times linear; /* Safari 和 Chrome */
+  -o-transition: all $times linear;
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin columnTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin columnLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin columnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin ellipsis2($line) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+}
+
+@mixin scroll {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin leftBottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+@mixin allFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
