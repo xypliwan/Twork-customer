@@ -44,7 +44,7 @@
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
     "moment": "^2.25.3",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.0",
     "v-viewer": "^1.5.1",
